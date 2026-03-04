@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BingoGUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Bingo" Height="450" Width="300">
     <Grid>
+        <StackPanel Margin="10">
 
+            <Button x:Name="btnGeneral"
+                    Content="Kártya generálása"
+                    Height="30"
+                    Margin="0,0,0,10"
+                    Click="btnGeneral_Click"/>
+
+            <UniformGrid x:Name="gridKartya"
+                         Rows="5"
+                         Columns="5"
+                         Margin="0,0,0,10"/>
+
+            <TextBox x:Name="txtFajlnev"
+                     Text="bingo.txt"
+                     Height="25"
+                     Margin="0,0,0,5"/>
+
+            <Button x:Name="btnMentes"
+                    Content="Mentés"
+                    Height="30"
+                    Click="btnMentes_Click"/>
+
+        </StackPanel>
     </Grid>
 </Window>
